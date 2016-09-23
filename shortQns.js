@@ -16,17 +16,15 @@ var maxOfThreeNumbers = function(num1,num2,num3) {
 }
 }
 
-var string="stringggyPasta";
+var string=('');
 var isACharacterAVowel = function(string) {
-var arrayOfStrings = console.log(string.split());
-for (var i = 0; i < arrayOfStrings.length; i++) {
-  return arrayOfStrings[i];
-};
-if (arrayOfStrings[i]= 'a' || 'e' || 'i' || 'o' || 'u' ) {
+for (var i = 0; i < string.length; i++) {
+if (isACharacterAVowel[i] === 'a' || 'e' || 'i' || 'o' || 'u' ) {
 return true  ;
 } else {
   return false;
 };
+}
 
 
 var sumArray = function([]){
@@ -42,3 +40,27 @@ for (var i = 0; i < array.length; i++) {
 result*=array[i];
 };
 }
+
+var numArgs = function(){
+  return arguments.length;
+}
+
+var revStrings =function(string) {
+  return string.split('').reverse().join('');
+}
+
+
+var arr = ['first item', 'second item is longer than the third one',
+           'third longish item'];
+var lgth = 0;
+var longest;
+var longestWord= function(arr){
+for(var i=0; i < arr.length; i++){
+    if(arr[i].length > lgth){
+        var lgth = arr[i].length;
+    }
+        longest = arr[i];
+}
+}
+
+return longest();
